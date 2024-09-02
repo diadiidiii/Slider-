@@ -1,0 +1,67 @@
+User
+.slider-container {
+    display: flex; /* Arrange children horizontally */
+    align-items: center; /* Center children vertically */
+  }
+
+  .slider {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    width: 80%; /* Full width */
+    height: 20px; /* Height of the track */
+    border-radius: 10px; /* Rounded corners */
+    background: #8f8e8e; /* Gray background */
+    outline: none; /* Remove outline */
+    margin: 0 10px; /* Margin for spacing */
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    width: 10px; /* Width of the thumb */
+    height: 30px; /* Height of the thumb */
+    border-radius: 5px;
+    background: #CBC3E3;
+    cursor: pointer; /* Change cursor to pointer */
+    position: relative; /* Set thumb position relative to the slider */
+    z-index: 2; /* Ensure thumb appears above droplet */
+}
+
+.slider::-moz-range-thumb {
+    width: 15px; /* Width of the thumb */
+    height: 30px; /* Height of the thumb */
+    background: #007bff; /* Blue background */
+    cursor: pointer; /* Change cursor to pointer */
+    position: relative; /* Set thumb position relative to the slider */
+    z-index: 2; /* Ensure thumb appears above droplet */
+}
+
+.droplet {
+  width: 40px; /* Width of the droplet */
+  height: 80px; /* Height of the droplet */
+  background-color: #CBC3E3; /* Blue background */
+  position: absolute; /* Position droplet absolutely */
+  top: 140px; /* Adjusted position to leave space for the number */
+  left: 50%; /* Center droplet horizontally */
+  transform: translateX(-50%); /* Center droplet horizontally */
+  border-bottom-left-radius: 50%; /* Rounded bottom left corner */
+  border-bottom-right-radius: 50%; /* Rounded bottom right corner */
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Triangle shape at the top */
+  z-index: 1; /* Ensure droplet stays above the slider */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px; /* Padding to make space for the number */
+  font-weight: bold;
+  color: rgb(22, 2, 2); /* Text color */
+}
+
+
+
+
+
+  .slider-container span {
+    margin: 0 5px; /* Margin for spacing */
+  }
+  
+
