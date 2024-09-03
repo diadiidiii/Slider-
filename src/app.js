@@ -6,7 +6,13 @@ function App() {
   return (
     <div className="App">
       <h1>Slider Component Example</h1>
-      <Slide min={0} max={100} initialValue={50} showMinMaxValues={true} showDroplet={true} />
+      <Slide 
+        min={0} 
+        max={100} 
+        initialValue={50} 
+        showMinMaxValues={true} 
+        showDroplet={true} 
+      />
     </div>
   );
 }

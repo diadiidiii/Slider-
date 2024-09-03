@@ -1,14 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './app'; // Assuming your App component is in App.js
+import ReactDOM from 'react-dom/client';
+import App from './app'; // Ensure the correct filename and path
 import './slide'; // Import any global styles
-import { createRoot } from 'react-dom/client';
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-
-createRoot(document.getElementById('root')).render(
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
